@@ -75,10 +75,16 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
-                            <a class="navbar-brand mr-auto" href="#">Time Travel
+							<a class="navbar-brand mr-auto" href="#">TEMPUS
                                 <img src="{% static 'img/logo.png'%}" alt="Site logo">
                                 
                             </a>
+							<form class="form-inline" action="/action_page.php">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search">
+							<button class="btn btn-success" type="submit">Search</button>
+							</form>
+						
+							
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -87,13 +93,13 @@ http://www.templatemo.com/tm-511-journey
                                   <li class="nav-item">
                                     <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
                                 </li>
-                                {% if not user.is_anonymous %}
-								<li class="nav-item">
-                                    <a class="nav-link active" href="#top">About <span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="{% url 'accounts:signup' %}"> About <span class="sr-only">(current)</span></a>
                                 </li>
 								  <li class="nav-item">
-                                    <a class="nav-link active" href="#top">Services <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link js-scroll-trigger" href="{% url 'accounts:signup' %}"> Services <span class="sr-only">(current)</span></a>
                                 </li>
+                                {% if not user.is_anonymous %}
 
 
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">{{user.last_name}}{{user.first_name}}님, 환영합니다!</a></li>
