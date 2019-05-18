@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Time Travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Time Travel</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      {% if not user.is_anonymous %}
+              <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#">{{user.last_name}}{{user.first_name}}님, 환영합니다!</a></li>
+                    <li><a href="{% url 'accounts:logout' %}" >로그아웃</a></li>
+                    </ul>
+                    {% else %}
+              <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="{% url 'accounts:signup' %}">회원가입</a></li>
+                    <li><a href="{% url 'accounts:login' %}" >로그인</a></li>
+               </ul>
+               {% endif %}
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+          {% if not user.is_anonymous %}
+  <h3 class="margin">{{ user.last_name }}{{ user.first_name }}님, 과거로 여행 떠나실 준비가 되셨나요?</h3>
+
+  <h3>아직 경험해보지 못한 수많은 여행지가 남아있답니다</h3>
+    {%  else  %}
+    <h3 class="margin">새로 오셨나요?</h3>
+
+  <h3>Time Travel에 가입하여 과거로 여행을 떠나보세요</h3>
+              <p>                </p>
+              <a href="{% url 'accounts:signup' %}" class="btn btn-default btn-lg">가입하기</a>
+              <a href="{% url 'accounts:login' %}" class="btn btn-default btn-lg">로그인</a>
+
+    {% endif %}
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">어디로 떠나고 싶으세요?</h3>
+  <p>함성이 가득했던 2002 거리응원, 눈물로 얼룩진 3.1 운동... Time Travel과 함께라면 어디든 상관없어요.</p>
+  <p>어디로 떠나볼까요?</p>
+    <a href="{% url 'tour:tour' %}" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+  <h3 class="margin">About Time Travel?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds1jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds2jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds3jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Design by Team "", Developed by JADE</p>
+</footer>
+
+</body>
+</html>
+
