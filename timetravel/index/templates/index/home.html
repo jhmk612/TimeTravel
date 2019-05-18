@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="kr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Journey HTML CSS Template</title>
+    <title>TimeTravel</title>
 <!-- 
 Journey Template 
 http://www.templatemo.com/tm-511-journey
@@ -23,7 +23,8 @@ http://www.templatemo.com/tm-511-journey
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
             <!--[if lt IE 9]>
-              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
           <![endif]-->
     <style>
@@ -146,7 +147,7 @@ http://www.templatemo.com/tm-511-journey
                         </div> <!-- row -->
                         <div class="row tm-banner-row" id="tm-section-search">
 
-                            <form action="" method="post" class="tm-search-form tm-section-pad-2">
+                            <form action="" method="post" name="locationform" class="tm-search-form tm-section-pad-2">
                                 {% csrf_token %}
                                 <div class="form-row tm-search-form-row">
 
@@ -217,7 +218,7 @@ http://www.templatemo.com/tm-511-journey
         <div class="option">
             <div>
                 <form method="POST" action="" onsubmit="searchPlaces(); return false;" onclick="showInput();">{%  csrf_token %}
-                    키워드 : <input type="text" value="종로" id="keyword" name='location' size="15">
+                    키워드 : <input type="text" value='종로' id="keyword" name='location' size="15">
                     <button type="submit" class="btn btn-primary">검색하기</button>
                 </form>
             </div>
@@ -233,7 +234,6 @@ http://www.templatemo.com/tm-511-journey
 
  <div class="container-fluid bg-3 text-center">
   <h3 class="margin"><span id="display"></span>의 인기 관광 코스</h3><br>
-
 
      <div class="row">
     <div class="col-sm-4">
@@ -252,6 +252,9 @@ http://www.templatemo.com/tm-511-journey
       <img src="{%static 'img/Insadong.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
+
+
+
 
 
 </div>
