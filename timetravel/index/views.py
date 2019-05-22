@@ -6,18 +6,27 @@ from .forms import LocationForm
 def home(request):
     return render(request, 'index/home.html')
 
+
+def get(request):
+    if request.method == 'GET':
+        form=LocationForm(request.GET)
+        return render(request, 'index/home.html', {'form': form})
+
+
 def locate(request):
+
     if request.method == 'POST': # If the form has been submitted...
         form = LocationForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
-            location = form.save(commit=False)
+            location = form.cleaned_data['location']
 
-            return redirect("index/home.html")
+        args = {'form': form, 'location': location}
 
-        else:
-            form=LocationForm()
+        return render(request, 'index/home.html', args)
 
-        return render(request, 'tour/tour.html', {'form':form})
+
+
+
 
 
 
