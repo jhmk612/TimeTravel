@@ -93,7 +93,7 @@ http://www.templatemo.com/tm-511-journey
                                     <a class="nav-link js-scroll-trigger" href="#top">About <span class="sr-only"></span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#top">Services <span class="sr-only"></span></a>
+                                    <a class="nav-link js-scroll-trigger" href="{% url 'products:intro' %}">Products <span class="sr-only"></span></a>
                                 </li>
                                 {% if not user.is_anonymous %}
 
@@ -146,8 +146,10 @@ http://www.templatemo.com/tm-511-journey
                         </div> <!-- row -->
                         <div class="row tm-banner-row" id="tm-section-search">
 
-                            <form action="" method="post" name="locationform" class="tm-search-form tm-section-pad-2">
+                            <form method="post" name="locationform" class="form-control" id="keyword" onsubmit="searchPlaces();">
                                 {% csrf_token %}
+                                {{ form.as_p }}
+
                                 <div class="form-row tm-search-form-row">
 
                                         <label for="inputCity">어디로 떠나고 싶으신가요?</label>
@@ -216,8 +218,10 @@ http://www.templatemo.com/tm-511-journey
     <div id="menu_wrap" class="bg_white">
         <div class="option">
             <div>
-                <form method="POST" action="" onsubmit="searchPlaces(); return false;" onclick="showInput();">{%  csrf_token %}
-                    키워드 : <input type="text" value='종로' id="keyword" name='location' size="15">
+                <form >
+
+
+                    키워드 : <input type="text" value="{{ location }}" id="keyword" name='location' size="15">
                     <button type="submit" class="btn btn-primary">검색하기</button>
                 </form>
             </div>
@@ -232,7 +236,7 @@ http://www.templatemo.com/tm-511-journey
             </div>
 
  <div class="container-fluid bg-3 text-center">
-  <h3 class="margin"><span id="display"></span>의 인기 관광 코스</h3><br>
+  <h3 class="margin">{{ location }}의 인기 관광 코스</h3><br>
 
      <div class="row">
     <div class="col-sm-4">
@@ -769,11 +773,7 @@ http://www.templatemo.com/tm-511-journey
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fcd7336d71566d0575930edb8e2762e0&libraries=services"></script><!-- https://github.com/flesler/jquery.scrollTo -->
     <script> 
-        function showInput() {
-        document.getElementById('display').innerHTML =
-            document.getElementById('keyword').value;
-        var lc = document.getElementById('display').innerHTML
-    }
+
 // 마커를 담을 배열입니다
 var markers = [];
 

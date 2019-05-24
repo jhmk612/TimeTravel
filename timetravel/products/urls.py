@@ -1,10 +1,10 @@
 from django.conf.urls import url
 from . import views
 
-app_name='tour'
+app_name='products'
 
 urlpatterns=[
-    url('^$', views.tour, name='tour'),
+    url('^', views.intro, name='intro'),
 
 
 ]
