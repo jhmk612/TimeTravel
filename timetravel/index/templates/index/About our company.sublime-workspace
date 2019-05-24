@@ -8,30 +8,21 @@
 	"buffers":
 	[
 		{
-			"file": "home.html",
-			"settings":
-			{
-				"buffer_size": 55627,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "/C/Users/박재민/Desktop/정보론 과제/products intro.html",
 			"settings":
 			{
-				"buffer_size": 18167,
+				"buffer_size": 18141,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/박재민/Desktop/journey-master/index.html",
+			"file": "/C/Users/박재민/Desktop/정보론 과제/payment.html",
 			"settings":
 			{
-				"buffer_size": 53399,
+				"buffer_size": 14524,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -73,22 +64,17 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/박재민/Documents/GitHub/TimeTravel",
-		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel",
-		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index",
-		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates",
-		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates/index"
-	],
 	"file_history":
 	[
+		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates/index/home.html",
+		"/C/Users/박재민/Desktop/경영정보론(MIS)/index.html",
+		"/C/Users/박재민/Desktop/journey-master/index.html",
 		"/C/Users/박재민/Desktop/about products.html",
 		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates/index/About our company.sublime-project"
 	],
 	"find":
 	{
-		"height": 39.3333333333
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -125,49 +111,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 55627,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8185,
-								8185
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2844.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "/C/Users/박재민/Desktop/정보론 과제/products intro.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18167,
+						"buffer_size": 18141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7455,
-								7455
+								10836,
+								18141
 							]
 						],
 						"settings":
@@ -177,7 +133,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2552.33333333,
+						"translation.y": 5151.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/박재민/Desktop/정보론 과제/payment.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7200,
+								7200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1303.33333333,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -185,36 +171,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/박재민/Desktop/journey-master/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 53399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								180,
-								180
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/C/Users/박재민/Desktop/경영정보론(MIS)/index.html",
 					"semi_transient": false,
 					"settings":
@@ -226,8 +182,8 @@
 						"selection":
 						[
 							[
-								3874,
-								3874
+								4254,
+								4254
 							]
 						],
 						"settings":
@@ -237,7 +193,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1145.33333333,
+						"translation.y": 1250.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
