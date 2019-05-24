@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls', namespace='accounts')),
     url(r'^tour/', include('tour.urls', namespace='tour')),
     url(r'^products/', include('products.urls', namespace='products')),
-
+    url(r'^about/', include('about.urls', namespace='about')),
 ]
