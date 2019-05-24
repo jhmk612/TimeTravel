@@ -8,28 +8,11 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/박재민/Desktop/정보론 과제/products intro.html",
+			"file": "/C/Users/박재민/Desktop/EX9_!",
 			"settings":
 			{
-				"buffer_size": 18141,
+				"buffer_size": 563,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/박재민/Desktop/정보론 과제/payment.html",
-			"settings":
-			{
-				"buffer_size": 14524,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/박재민/Desktop/경영정보론(MIS)/index.html",
-			"settings":
-			{
-				"buffer_size": 4295,
 				"line_ending": "Windows"
 			}
 		}
@@ -66,8 +49,10 @@
 	},
 	"file_history":
 	[
-		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates/index/home.html",
+		"/C/Users/박재민/Desktop/정보론 과제/payment.html",
+		"/C/Users/박재민/Desktop/정보론 과제/products intro.html",
 		"/C/Users/박재민/Desktop/경영정보론(MIS)/index.html",
+		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates/index/home.html",
 		"/C/Users/박재민/Desktop/journey-master/index.html",
 		"/C/Users/박재민/Desktop/about products.html",
 		"/C/Users/박재민/Documents/GitHub/TimeTravel/timetravel/index/templates/index/About our company.sublime-project"
@@ -106,97 +91,36 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/박재민/Desktop/정보론 과제/products intro.html",
+					"file": "/C/Users/박재민/Desktop/EX9_!",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18141,
+						"buffer_size": 563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10836,
-								18141
+								531,
+								531
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5151.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/박재민/Desktop/정보론 과제/payment.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14524,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7200,
-								7200
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1303.33333333,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/박재민/Desktop/경영정보론(MIS)/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4254,
-								4254
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1250.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
