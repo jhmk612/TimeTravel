@@ -90,7 +90,7 @@ http://www.templatemo.com/tm-511-journey
                                 {% if not user.is_anonymous %}
 
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">{{user.last_name}}{{user.first_name}}님, 환영합니다!</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">{{user.last_name}}{{user.first_name}}님, 환영합니다!</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'accounts:logout' %}" >로그아웃</a></li>
 
                     {% else %}
