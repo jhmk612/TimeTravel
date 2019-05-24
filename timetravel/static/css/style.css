@@ -99,16 +99,7 @@ a:hover {
 /* //colors code */
 
 /* bottom-to-top */
-a.move-top {
-    width: 34px;
-    height: 34px;
-    background: url(../images/move-top.png) no-repeat;
-    display: inline-block;
-    position: fixed;
-    bottom: 4%;
-    right: 2%;
-    z-index: 0;
-}
+
 
 /* //bottom-to-top */
 header {
@@ -184,15 +175,7 @@ div#home {
 /* //header */
 
 /* banner */
-.banner-top1 {
-    background: url(../images/1.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    min-height: 800px;
-}
+
 
 .banner-text {
     padding-top: 15em;
@@ -262,14 +245,7 @@ p.movetxt {
 /* //about */
 
 /* services */
-.serives-w3pvt-web {
-    background: url(../images/ser.jpg) no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-}
+
 
 .services-w3ls-grid h4 {
     font-weight: 600;
@@ -331,14 +307,7 @@ h3.title {
 /* //middle */
 
 /* stats */
-.stats {
-    background: url(../images/bg2.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-}
+
 
 p.counter {
     color: #fff;
@@ -582,14 +551,7 @@ ul.partners-icon li span {
 /* //team */
 
 /* middle content */
-.w3ls-bnrbtm {
-    background: url(../images/bg1.jpg) no-repeat top;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-}
+
 
 .cont-w3pvt {
     max-width: 900px;
