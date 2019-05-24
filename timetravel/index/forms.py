@@ -1,12 +1,6 @@
-from django.forms import ModelForm
-from .models import Location
+from django import forms
 
-class LocationForm(ModelForm):
-    class Meta:
-        model=Location
-        fields = ['location']
 
-        def __init__(self, *args, **kwargs):
-            super(MemberForm, self).__init__(*args, **kwargs)
-            for field_name, field in self.fields.items():
-                field.widget.attrs['class'] = 'form-control'
+class LocationForm(forms.Form):
+    location = forms.CharField(max_length=100)
+
