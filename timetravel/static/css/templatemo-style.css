@@ -8,6 +8,8 @@ Highlight color (pink)		: #c66995
 --------------------------------------
 
 */
+
+
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -130,11 +132,7 @@ p:last-child { margin-bottom: 0; }
     left: 0px;
     background: rgba(0, 0, 0, 0.7);
 }
-.tm-banner-bg {
-    background: url(../img/bannerjpg' %}) center top no-repeat;
-    min-height: 720px;
-    position: relative;
-}
+
 .tm-banner-row { 
     position: relative;
     z-index: 100;
@@ -392,7 +390,7 @@ label { font-weight: 700; }
 
 .tm-recommended-price-box {    
     background-color: #69c6ba;
-    background-image: url(../img/button-curve.png);
+    background-image: url(/static/img/button-curve.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     font-weight: 400;
@@ -631,7 +629,7 @@ footer p { color: white; }
         top: -45px;
         left: 45px;
         z-index: 27;
-        background: url(../img/button-curve.png) 0 0 no-repeat;
+        background: url(/static/img/button-curve.png) 0 0 no-repeat;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
         background-size: auto 100%;      
