@@ -10,19 +10,18 @@ class HomeView(TemplateView):
 
     def get(self, request):
         form = LocationForm()
+
+
         return render(request, self.template_name, {'form': form})
 
 
     def post(self, request):
-        form = LocationForm(request.POST) # A form bound to the POST data
-        if form.is_valid(): # All validation rules pass
-            location = form.cleaned_data['location']
+        if request.method == 'POST':
+            location = request.POST.get('location')
 
-            form=LocationForm
 
-        args = {'form': form, 'location': location}
 
-        return render(request, 'index/home.html', args)
+        return render(request, 'index/home.html', {'location':location})
 
 
 
