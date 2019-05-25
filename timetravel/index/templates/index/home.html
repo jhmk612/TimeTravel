@@ -235,7 +235,7 @@ http://www.templatemo.com/tm-511-journey
 </div>
             </div>
 
-{% ifequal location "광화문" %}
+{% if location == "광화문" %}
          <section class="p-5 tm-container-outer tm-bg-gray">
                 <div class="container">
                     <div class="row">
@@ -267,7 +267,82 @@ http://www.templatemo.com/tm-511-journey
                     </div>
                 </section>
             </div>
-                {% endifequal %}
+
+{% elif location == "잠실" %}
+    <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4">This is the recommended package for {{ location }}</p>
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+     <div class="tm-container-outer" id="tm-section-2">
+
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                         <img src="{% static 'img/잠실1.jpg' %}">
+                        <img src="{% static 'img/잠실2.jpg' %}">
+                        <img src="{% static 'img/잠실3.jpg' %}">
+                    </div>
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Jamsil</h2>
+                        <p>Jamsil-dong is a neighbourhood, dong, of Songpa-gu, Seoul, South Korea.[2] Its name is derived from silkworm breeding during the Joseon dynasty. Jamsiltranslates to a room or place for sericulture. The state encouraged people to raise silkworms, so founded Dongjamsil( literally "east place for sericulture") in the east vicinity of Seoul.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>
+
+                </section>
+     </div>
+    {% elif location == '여의도' %}
+     <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4">This is the recommended package for {{ location }}</p>
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+     <div class="tm-container-outer" id="tm-section-2">
+
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+
+                         <img src="{% static 'img/여의도1.jpg' %}">
+                        <img src="{% static 'img/여의도2.jpg' %}">
+                        <img src="{% static 'img/여의도3.jpg' %}">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Yeouido</h2>
+                        <p>It is Seoul's main finance and investment banking district. Its 8.4 square kilometers are home to some 30,988 people. The island is located in the Yeongdeungpo-gu district of Seoul, and largely corresponds to the precinct of Yeouido-dong. The island contains the National Assembly Building, where the National Assembly of South Korea meets, Korea Financial Investment Association, the large Yoido Full Gospel Church, the 63 Building, and the headquarters of LG, Korean Broadcasting System.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+            </div>
+
+    {% else %}
+     <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4">This is no recommended package for {{ location }} yet</p>
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+                {% endif %}
 
              </div> <!-- .tm-container-outer -->
 
