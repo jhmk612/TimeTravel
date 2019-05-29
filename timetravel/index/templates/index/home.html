@@ -111,7 +111,8 @@ http://www.templatemo.com/tm-511-journey
                                     <h1 class="text-uppercase tm-banner-title">Welcome, {{ user.first_name }}!</h1>
                                     <img src="{% static 'img/dots-3.png' %}" alt="Dots">
                                     <p class="tm-banner-subtitle">Ready to time travel?</p>
-                                    <p class="tm-banner-subtitle">There are so many places yet to be explored</p>
+                                    <p class="tm-banner-subtitle">There are so many places</p>
+                                        <p class="tm-banner-subtitle">Yet to be explored</p>
 
                                     <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>
                                 </div>    
@@ -153,13 +154,19 @@ http://www.templatemo.com/tm-511-journey
 
                                     <h1 class="text-uppercase tm-banner-title">New Here?</h1>
                                     <img src="{% static 'img/dots-3.png' %}" alt="Dots">
-                                    <p class="tm-banner-subtitle">Join Tempus and enjoy time travel!</p>
+                                    <p class="tm-banner-subtitle">Join <strong>TEMPUS</strong> and</p> <p class="tm-banner-subtitle">Enjoy time travel!</p>
 
-                                     <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>
-                                </div><!--tmbanner-->
+                                     <a href="javascript:void(0)" class="tm-signup-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>
+
+                                    <div class="row tm-banner-row">
+                                    <a href="{% url 'accounts:signup' %}" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="signup" style="margin-bottom:20px">회원가입</a>
+
+                                    <a href="{% url 'accounts:login' %}" class="btn btn-primary tm-btn tm-btn-search text-uppercase">로그인</a>
+                                    </div>
+                                    </div><!--tmbanner-->
                             </div><!--col-->
                         </div><!--row-->
-                             <div class="row tm-banner-row" id="tm-section-search">
+                            <!-- <div class="row tm-banner-row" id="tm-section-search">
 
                                    <form action="" method="post" class="tm-search-form tm-section-pad-2">
                                        {% csrf_token %}
@@ -173,8 +180,8 @@ http://www.templatemo.com/tm-511-journey
                                         <label for="btnSubmit">&nbsp;</label>
                                         <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
                                     </div>
-                                </div><!--form row-->
-                            </form>
+                                </div> <!--form row-->
+                            <!--</form>
                              </div><!--banner row-->
                                 <div class="tm-banner-overlay"></div>
                             </div><!--container-->
@@ -232,11 +239,14 @@ http://www.templatemo.com/tm-511-journey
 
             // Smooth scroll to search form
             $('.tm-down-arrow-link').click(function(){
-                $.scrollTo('#tm-section-search', 400, {easing:'linear'});
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
             });
 
+            $('.tm-signup-link').click(function(){
+                $.scrollTo('#signup', 300, {easing:'linear'});
+            });
  // Update nav links on scroll
-          
+
 
 
 

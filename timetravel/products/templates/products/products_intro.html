@@ -33,12 +33,14 @@ http://www.templatemo.com/tm-511-journey
     min-height: 720px;
     position: relative;
 
+
 }
 
-        .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:15px;}
+
+        .map_wrap, .map_wrap * {padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:15px;}
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
-.map_wrap {position:relative;width:100%;height:750px;}
-#menu_wrap {position:absolute;top:0;left:0;bottom:0;width:250px%;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
+.map_wrap {position:relative;width:100%;height:750px;;text-align: center;}
+#menu_wrap {position:absolute;top:0;left:5%;bottom:0;width:35%;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
 .bg_white {background:#fff;}
 #menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
 #menu_wrap .option{text-align: center;}
@@ -134,17 +136,26 @@ http://www.templatemo.com/tm-511-journey
 
 
 <div class="tm-page-wrap mx-auto">
-<section class="p-5 tm-container-outer tm-bg-gray">
-     <div class="tm-container-outer tm-banner-bg-gray">
+<section class="p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+
+                        </div>
+                    </div>
+                </div>
+</section>
+
+
        <div class="map_wrap">
-           <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+           <div id="map" style="width:90%;height:100%;position:relative;overflow:hidden; margin:auto;"></div>
 
                 <div id="menu_wrap" class="bg_white">
                     <div class="option">
                         <div>
                 <form id="mapsearch" method="post" onsubmit="searchPlaces();">
                     {% csrf_token %}
-                    어디로 떠나볼까요? : <input type="text" name="destination" value="{{ location }}" id="keyword" size="7">
+                    어디로 갈까요? : <input type="text" name="destination" value="{{ location }}" id="keyword" size="7">
                     <button class="btn btn-primary my-2 my-sm-0" type="submit" >검색하기</button>
                 </form>
                         </div>
@@ -155,8 +166,16 @@ http://www.templatemo.com/tm-511-journey
             </div>
 
         </div>
-     </div>
+<section class="p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+
+                        </div>
+                    </div>
+                </div>
 </section>
+
 
 
             
@@ -165,9 +184,9 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
-                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
-                            <p class="mb-4">This is the recommended package for {{ location }}</p>
-                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                            <h2 class="text-uppercase mb-4">Introduction for <strong>{{ location }}</strong></h2>
+                            <p class="mb-4" style="font-size: 15px;">Click <strong>'Browse Packages'</strong> to find what suits you</p>
+                            <!--<a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>-->
                         </div>
                     </div>
                 </div>
@@ -188,10 +207,22 @@ http://www.templatemo.com/tm-511-journey
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Gwanghwamun</h2>
-                        <p>Gwanghwamun is the main and largest gate of Gyeongbokgung Palace, in Jongno-gu, Seoul, South Korea. It is located at a three-way intersection at the northern end of Sejongno. As a landmark and symbol of Seoul's long history as the capital city during the Joseon Dynasty, the gate has gone through multiple periods of destruction and disrepair. Restoration work on the gate was finished and it was opened to the public on August 15, 2010.</p>
+                        <p style="font-size: 15px">Gwanghwamun is the main and largest gate of Gyeongbokgung Palace, in Jongno-gu, Seoul, South Korea. It is located at a three-way intersection at the northern end of Sejongno. As a landmark and symbol of Seoul's long history as the capital city during the Joseon Dynasty, the gate has gone through multiple periods of destruction and disrepair. Restoration work on the gate was finished and it was opened to the public on August 15, 2010.</p>
                         <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
                     </div>
                 </section>
+            <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                           <h2 class="text-uppercase mb-4">Not satisfied with <strong>{{ location }}</strong>?</h2>
+
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn" style="margin-bottom: 10px">Search for other areas</a>
+                            <a href="{% url 'products:intro' %}" class="text-uppercase btn-primary tm-btn">Browse through full products</a>
+                        </div>
+                    </div>
+                </div>
+</section>
             </div>
 
 {% elif location == "잠실" %}
@@ -199,9 +230,9 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
-                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
-                            <p class="mb-4">This is the recommended package for {{ location }}</p>
-                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                            <h2 class="text-uppercase mb-4">Introduction for <strong>{{ location }}</strong></h2>
+                            <!--<p class="mb-4">Click the below button to browse through other areas</p>
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>-->
                         </div>
                     </div>
                 </div>
@@ -223,15 +254,27 @@ http://www.templatemo.com/tm-511-journey
                     </div>
 
                 </section>
+     <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                           <h2 class="text-uppercase mb-4">Not satisfied with <strong>{{ location }}</strong>?</h2>
+
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn" style="margin-bottom: 10px">Search for other areas</a>
+                            <a href="{% url 'products:intro' %}" class="text-uppercase btn-primary tm-btn">Browse through full products</a>
+                        </div>
+                    </div>
+                </div>
+</section>
      </div>
     {% elif location == '여의도' %}
      <section class="p-5 tm-container-outer tm-bg-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
-                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
-                            <p class="mb-4">This is the recommended package for {{ location }}</p>
-                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                           <h2 class="text-uppercase mb-4">Introduction for <strong>{{ location }}</strong></h2>
+                            <!--<p class="mb-4">Click the below button to browse through other areas</p>
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>-->
                         </div>
                     </div>
                 </div>
@@ -252,6 +295,18 @@ http://www.templatemo.com/tm-511-journey
                         <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
                     </div>
                 </section>
+     <section class="p-5 tm-container-outer tm-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                           <h2 class="text-uppercase mb-4">Not satisfied with <strong>{{ location }}</strong>?</h2>
+
+                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn" style="margin-bottom: 10px">Search for other areas</a>
+                            <a href="{% url 'products:intro' %}" class="text-uppercase btn-primary tm-btn">Browse through full products</a>
+                        </div>
+                    </div>
+                </div>
+</section>
             </div>
 
     {% else %}
@@ -259,9 +314,9 @@ http://www.templatemo.com/tm-511-journey
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
-                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
-                            <p class="mb-4">This is no recommended package for {{ location }} yet</p>
-                            <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                            <h2 class="text-uppercase mb-4">We don't have a tour package ready for <strong>{{ location }}</strong></h2>
+                             <a href="javascript:void(0)" class="text-uppercase btn-primary tm-btn" style="margin-bottom: 10px">Search for other areas</a>
+                            <a href="{% url 'products:intro' %}" class="text-uppercase btn-primary tm-btn">Browse through full products</a>
                         </div>
                     </div>
                 </div>
@@ -270,8 +325,15 @@ http://www.templatemo.com/tm-511-journey
 
                 {% endif %}
 
+ <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company
+
+                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
+            </footer>
+
         </div>
         </div>
+
 
 
 
@@ -528,7 +590,7 @@ $(function(){
 
             // Smooth scroll to search form
             $('.btn-primary').click(function(){
-                $.scrollTo('#top', 400, {easing:'linear'});
+                $.scrollTo('#top', 300, {easing:'linear'});
             });
 
 
