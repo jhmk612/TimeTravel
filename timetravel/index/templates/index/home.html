@@ -19,7 +19,7 @@ http://www.templatemo.com/tm-511-journey
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/templatemo-style.css' %}">                                   <!-- Templatemo style -->
-
+    <link rel="stylesheet" type="text/css" href="{% static 'css/About-style.css' %}">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
             <!--[if lt IE 9]>
@@ -108,8 +108,8 @@ http://www.templatemo.com/tm-511-journey
 
                                 <div class="tm-banner-header">
 
-                                    <h1 class="text-uppercase tm-banner-title">Welcome, {{ user.first_name }}!</h1>
-                                    <img src="{% static 'img/dots-3.png' %}" alt="Dots">
+                                    <h1 class="text-uppercase tm-banner-title navbar-brand">Welcome, {{ user.first_name }}!</h1>
+                                    <br><img src="{% static 'img/dots-3.png' %}" alt="Dots">
                                     <p class="tm-banner-subtitle">Ready to time travel?</p>
                                     <p class="tm-banner-subtitle">There are so many places</p>
                                         <p class="tm-banner-subtitle">Yet to be explored</p>
@@ -189,7 +189,49 @@ http://www.templatemo.com/tm-511-journey
                  </section>
 
                                  {% endif %}
-           <section class="p-5 tm-container-outer tm-bg-gray">
+        <section class="probootstrap_section">
+            <div class="container">
+            <div class="row text-center mb-5">
+            <div class="col-md-12">
+            <h2 class="display-4 border-bottom probootstrap-section-heading navbar-brand mr-auto">About <strong>TEMPUS</strong></h2>
+            </div>
+            </div>
+            </div>
+            </section>
+        <section class="probootstrap-section-half d-md-flex" id="section-about">
+<div class="probootstrap-image" style="background-image: url('{% static 'img/1.jpg' %}')"></div>
+<div class="probootstrap-text">
+<div class="probootstrap-inner">
+<h2 class="heading mb-4">It's all about <strong>Time Travel</strong></h2>
+    <p>Tempus, the number 1 time travelling agency, lets you travel through time and visit the most interesting events that happened in the past.</p>
+    <p>Our expert engineers are up 24/7 upgrading the specifications of our machine. Unlike other few travel agencies, our travel provides you with a smooth ride to the past. Please feel free to contact us for any inquiries.</p>
+<p>Unleash the traveler inside you!
+</p>
+
+<p><a href="#" class="btn btn-primary">Read More</a></p>
+</div>
+</div>
+</section>
+        <section class="probootstrap_section">
+            <div class="container">
+            <div class="row text-center mb-5">
+            <div class="col-md-12">
+            <h2 class="display-4 border-bottom probootstrap-section-heading navbar-brand mr-auto">Our <strong>Products</strong></h2>
+            </div>
+            </div>
+            </div>
+            </section>
+<section class="p-3 tm-bg-gray" style="background-color: white">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           <section class="p-5 tm-container-outer tm-bg-gray" style="background-color: white">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
@@ -200,6 +242,7 @@ http://www.templatemo.com/tm-511-journey
                     </div>
                 </div>
             </section>
+
 
 
         </div><!-- .tm-container-outer -->
