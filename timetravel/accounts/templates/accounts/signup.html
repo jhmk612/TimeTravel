@@ -211,15 +211,15 @@ body {
 <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Sign Up</h5>
+            <h5 class="card-title text-center">회원가입</h5>
             <form class="form-signin" method="post">
       {% csrf_token %}
       {% bootstrap_form form %}
 
-        <button class="btn btn-block btn-lg btn-primary btn-default" type="submit">로그인</button>
+        <button class="btn btn-block btn-lg btn-primary btn-default" type="submit">회원가입</button>
 
 
-        <input type="button" onclick="location.href='{% url 'accounts:signup' %}';" value="회원가입" class="btn btn-block btn-lg btn-primary btn-default">
+        <input type="button" onclick="location.href='{% url 'accounts:login' %}';" value="로그인" style="size: 15px" class="btn btn-block btn-lg btn-primary btn-default">
 
       </form>
           </div>

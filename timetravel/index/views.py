@@ -1,27 +1,28 @@
+from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 
 from .forms import LocationForm
 
 # Create your views here.
-def home(request):
-    return render(request, 'index/home.html')
 
-'''def get(request):
-    if request.method == 'GET':
-        form=LocationForm(request.GET)
-        return redirect(request, 'index/home.html', {'form': form})'''
+class HomeView(TemplateView):
 
 
-def locate(request):
+    def get(self, request):
 
-    if request.method == 'POST': # If the form has been submitted...
-        form = LocationForm(request.POST) # A form bound to the POST data
-        if form.is_valid(): # All validation rules pass
-            location = form.cleaned_data.get['location']
 
-        args = {'form': form, 'location': location}
 
-        return render(request, 'index/home.html', args)
+        return render(request, 'index/home.html')
+
+
+    def post(self, request):
+
+        if request.method == 'POST':
+            location = request.POST.get('destination')
+
+
+
+        return render(request, 'products/products_intro.html', {'location':location})
 
 
 
