@@ -501,49 +501,101 @@ http://www.templatemo.com/tm-511-journey
 </div>
 <!-- /.container -->
 
+<div class="container">
+<div class="row">
+<!-- You can make it whatever width you want. I'm making it full width
+on <= small devices and 4/12 page width on >= medium devices -->
+<div class="col-xs-12 col-md-4">
 
-<div class="panel panel-default bootstrap-basic" align="center">
-  <form class="panel-body" action="your-form-handling-page" method="POST" id="checkout-form" onsubmit="return do_when_clicking_submit_button()">
-    <div class="row">
-       <div class="form-group col-md-12">
-          <label for="cardholder-name">Name on Card</label>
-          <input type="text" class="form-control" id="cardholder-name" placeholder="Full Name">
-          <span class="helper-text"></span>
-       </div>
-       <!--Hosted Field for CC number-->
-       <div class="form-group col-md-12">
-          <label for="card-number">Card Number</label>
-          <div class="input-group">
-            <div class="form-control" id="card-number" data-bluesnap="ccn"></div>
-            <div id="card-logo" class="input-group-addon"><img src="https://files.readme.io/d1a25b4-generic-card.png" height="20px"></div>
-         </div>
-         <span class="helper-text" id="card-help"></span>
-       </div>
-       <!--Hosted Field for CC EXP-->
-       <div class="form-group col-xs-7">
-          <label for="exp-date">Exp. Date</label>
-          <div class="form-control" id="exp-date" data-bluesnap="exp"></div>
-          <span class="helper-text"></span>
-       </div>
-      <!--Hosted Field for CC CVV-->
-      <div class="form-group col-xs-5">
-         <label for="cvv">Security Code</label>
-         <div class="form-control" id="cvv" data-bluesnap="cvv"></div>
-         <span class="helper-text"></span>
-      </div>
-    </div>  
 
-    <button class="btn btn-success btn-lg col-xs-6 col-xs-offset-3" type="submit" id="submit-button">Pay Now</button>
-      
-    </form>
-  
+<!-- CREDIT CARD FORM STARTS HERE -->
+<div class="panel panel-default credit-card-box">
+<div class="panel-heading display-table" >
+<div class="row display-tr" >
+<h3 class="panel-title display-td" >Payment Details</h3>
+<div class="display-td" >                            
+<img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
 </div>
+</div>                    
+</div>
+<div class="panel-body">
+<form role="form" id="payment-form">
+<div class="row">
+<div class="col-xs-12">
+<div class="form-group">
+<label for="cardNumber">CARD NUMBER</label>
+<div class="input-group">
+<input 
+type="tel"
+class="form-control"
+name="cardNumber"
+placeholder="Valid Card Number"
+autocomplete="cc-number"
+required autofocus 
+/>
+<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+</div>
+</div>                            
+</div>
+</div>
+<div class="row">
+<div class="col-xs-7 col-md-7">
+<div class="form-group">
+<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+<input 
+type="tel" 
+class="form-control" 
+name="cardExpiry"
+placeholder="MM / YY"
+autocomplete="cc-exp"
+required 
+/>
+</div>
+</div>
+<div class="col-xs-5 col-md-5 pull-right">
+<div class="form-group">
+<label for="cardCVC">CV CODE</label>
+<input 
+type="tel" 
+class="form-control"
+name="cardCVC"
+placeholder="CVC"
+autocomplete="cc-csc"
+required
+/>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="form-group">
+<label for="couponCode">COUPON CODE</label>
+<input type="text" class="form-control" name="couponCode" />
+</div>
+</div>                        
+</div>
+<div class="row">
+<div class="col-xs-12">
+<button class="btn btn-success btn-lg btn-block" type="submit">Start Subscription</button>
+</div>
+</div>
+<div class="row" style="display:none;">
+<div class="col-xs-12">
+<p class="payment-errors"></p>
+</div>
+</div>
+</form>
+</div>
+</div>            
+<!-- CREDIT CARD FORM ENDS HERE -->
 
-<!--BlueSnap Hosted Payment Fields JavaScript file-->
-    <script type="text/javascript" src="https://sandbox.bluesnap.com/services/hosted-payment-fields/v1.0/bluesnap.hpf.mini.js"></script>
+
+</div>            
 
 
 
+</div>
+</div>
 
 
 
