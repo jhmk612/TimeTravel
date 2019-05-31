@@ -39,25 +39,36 @@ http://www.templatemo.com/tm-511-journey
 
               }
 
-              #trial { margin:50px auto; text-align:"center"}
+              .box { 
+                margin:50px auto; 
+                width:600px;
+                border: 1px solid;
+                padding: 10px;
+
+
+              }
 
               /* CSS for Credit Card Payment form */
-              .credit-card-box .panel-title {
+              .credit-card-box 
+              .panel-title{
                 display: inline;
                 font-weight: bold;
               }
-              .credit-card-box .form-control.error {
+              .credit-card-box 
+              .form-control.error {
                 border-color: red;
                 outline: 0;
                 box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
               }
-              .credit-card-box label.error {
+              .credit-card-box label
+              .error {
                 font-weight: bold;
                 color: red;
                 padding: 2px 8px;
                 margin-top: 2px;
               }
-              .credit-card-box .payment-errors {
+              .credit-card-box 
+              .payment-errors {
                 font-weight: bold;
                 color: red;
                 padding: 2px 8px;
@@ -67,19 +78,23 @@ http://www.templatemo.com/tm-511-journey
                 display: block;
               }
               /* The old "center div vertically" hack */
-              .credit-card-box .display-table {
+              .credit-card-box 
+              .display-table {
                 display: table;
               }
-              .credit-card-box .display-tr {
+              .credit-card-box 
+              .display-tr {
                 display: table-row;
               }
-              .credit-card-box .display-td {
+              .credit-card-box 
+              .display-td {
                 display: table-cell;
                 vertical-align: middle;
                 width: 50%;
               }
               /* Just looks nicer */
-              .credit-card-box .panel-heading img {
+              .credit-card-box 
+              .panel-heading img {
                 min-width: 180px;
               }
 
@@ -545,11 +560,12 @@ http://www.templatemo.com/tm-511-journey
       <!-- /.container -->
 
 
-    <!-- CREDIT CARD FORM STARTS HERE -->
-    <div class="panel panel-default credit-card-box">
+      <!-- CREDIT CARD FORM STARTS HERE -->
+   <div class="box" align="center">
+    <div class="panel panel-default credit-card-box" id="trial">
       <div class="panel-heading display-table" >
         <div class="row display-tr" >
-          <h3 class="panel-title display-td" >Payment Details</h3>
+          <h3 class="panel-title">Payment Details</h3>
           <div class="display-td" >                            
             <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
           </div>
@@ -591,7 +607,7 @@ http://www.templatemo.com/tm-511-journey
             </div>
             <div class="col-xs-5 col-md-5 pull-right">
               <div class="form-group">
-                <label for="cardCVC">CV CODE</label>
+                <label for="cardCVC">CVC CODE</label>
                 <input 
                 type="tel" 
                 class="form-control"
@@ -613,7 +629,7 @@ http://www.templatemo.com/tm-511-journey
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <button class="btn btn-success btn-lg btn-block" type="submit">Start Subscription</button>
+              <button class="btn btn-success btn-lg btn-block" type="submit">Make Payment</button>
             </div>
           </div>
           <div class="row" style="display:none;">
@@ -624,24 +640,16 @@ http://www.templatemo.com/tm-511-journey
         </form>
       </div>
     </div>            
+  </div>
     <!-- CREDIT CARD FORM ENDS HERE -->
 
 
-  </div>            
-
-
-
-</div>
-</div>
-
-<!-- If you're using Stripe for payments -->
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
 
 <footer class="tm-container-outer">
   <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company 
 
-    . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
+    . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Team Tempus</a></p>
   </footer>
 </div>
 </div> <!-- .main-content -->
