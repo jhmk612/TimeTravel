@@ -9,6 +9,6 @@ class intro(TemplateView):
     def get(self, request):
 
 
-        return render(request, 'products/index.html')
+        return render(request, 'products/payment.html')
 
 
