@@ -861,17 +861,7 @@ h2.footer-title {
         display: inherit;
     }
 
-    .nav_links>li>a>span {
-        font-size: 28px;
-    }
 
-    .nav_links>li>a>p {
-        font-size: 14px;
-    }
-
-    .nav_links>li {
-        margin-top: 1.28em;
-    }
 
     .banner-text {
         padding-top: 11em;
@@ -1022,9 +1012,7 @@ h2.footer-title {
         font-size: 27px;
     }
 
-    .nav_links>li>a>span {
-        font-size: 26px;
-    }
+
 
     .banner-text h3 {
         font-size: 50px;
@@ -1165,17 +1153,7 @@ h2.footer-title {
         font-size: 24px;
     }
 
-    .nav_links>li>a>span {
-        font-size: 24px;
-    }
 
-    .nav_links>li>a>p {
-        font-size: 13px;
-    }
-
-    .nav_links>li {
-        margin-top: 1.5em;
-    }
 
     .banner-top1 {
         min-height: 448px;
@@ -1274,9 +1252,7 @@ h2.footer-title {
         font-size: 22px;
     }
 
-    .nav_links>li>a>span {
-        font-size: 22px;
-    }
+
 
     .banner-text h4 {
         font-size: 4.5em;
@@ -1347,9 +1323,7 @@ h2.footer-title {
 }
 
 @media(max-width: 480px) {
-    .main-nav {
-        padding: 1em .3em;
-    }
+
 
     .logo a {
         font-size: 21px;
@@ -1438,13 +1412,9 @@ h2.footer-title {
         font-size: 19px;
     }
 
-    .nav_links>li>a>span {
-        font-size: 21px;
-    }
 
-    .nav_links>li>a>p {
-        font-size: 12px;
-    }
+
+
 
     p.counter {
         font-size: 2.2em;
@@ -1569,13 +1539,7 @@ h2.footer-title {
         font-size: 18px;
     }
 
-    .nav_links>li>a>span {
-        font-size: 19px;
-    }
 
-    .nav_links>li>a>p {
-        font-size: 11px;
-    }
 
     .banner-text h4 {
         font-size: 3.2em;
