@@ -33,9 +33,20 @@ http://www.templatemo.com/tm-511-journey
               height: 100%;
           }
 		      .tm-banner-bg {
-    background: url('{% static 'img/banner.jpg' %}') center top no-repeat;
+
     min-height: 720px;
     position: relative;
+
+          .tm-slideshow { width: 45%; }
+
+.tm-slideshow-description {
+    padding: 50px;
+    color: white;
+    width: 53%;
+    z-index: 100;
+    margin-left: -42px;
+}
+
 
 }
 
@@ -98,9 +109,11 @@ http://www.templatemo.com/tm-511-journey
         </div> <!-- .tm-top-bar -->
 
         <div class="tm-page-wrap mx-auto">
+<section class="tm-banner">
 
-            <section class="p-5 tm-container-outer tm-bg-gray">
  <div id="main" class="carousel slide" data-ride="carousel">
+
+                    <!--<div class="container">-->
 
                           <!-- Indicators -->
                           <ul class="carousel-indicators">
@@ -142,8 +155,10 @@ http://www.templatemo.com/tm-511-journey
                             <span class="carousel-control-next-icon"></span>
                           </a>
 
-                        </div>  
 
+                        </div>
+</section>
+ <section class="p-5 tm-container-outer tm-bg-gray">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        

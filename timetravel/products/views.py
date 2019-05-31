@@ -12,3 +12,8 @@ class intro(TemplateView):
         return render(request, 'products/payment.html')
 
 
+class index(TemplateView):
+
+    def get(selfself, request):
+
+        return render(request, 'products/index.html')

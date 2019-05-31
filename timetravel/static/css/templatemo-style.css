@@ -25,13 +25,13 @@ a:focus {
 p:last-child { margin-bottom: 0; }
 
 .tm-page-wrap {
-    max-width: 1400px;
+    max-width: 2000px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
     background: white;
 }
 
 .tm-container-outer {
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0 auto;
 }
 
@@ -252,15 +252,6 @@ label { font-weight: 700; }
     flex-direction: row-reverse;
 }
 
-
-
-.tm-slideshow-description {
-    padding: 50px;
-    color: white;
-    width: 68%;
-    z-index: 100;
-    margin-left: -42px;
-}
 
 .tm-slideshow-description-left {
     margin-left: auto;
