@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+
 
 # Create your views here.
 
@@ -12,8 +13,27 @@ class intro(TemplateView):
         return render(request, 'products/payment.html')
 
 
-class index(TemplateView):
+class gwanghwamun(TemplateView):
 
-    def get(selfself, request):
+
+    def get(self, request):
+
 
         return render(request, 'products/index.html')
+
+class jamsil(TemplateView):
+
+
+    def get(self, request):
+
+
+        return render(request, 'products/index_jamsil.html')
+
+
+class yeouido(TemplateView):
+
+
+    def get(self, request):
+
+
+        return render(request, 'products/index_yeouido.html')
