@@ -103,9 +103,9 @@ http://www.templatemo.com/tm-511-journey
 <body>
 
 
-
-
-
+	<!-- main -->
+	<div class="d-flex">
+		<!-- left content -->
 		<div id="main-content">
 		<!--navbar삽입-->
 		<div class="tm-top-bar-bg"></div>    
@@ -127,7 +127,7 @@ http://www.templatemo.com/tm-511-journey
                                     <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="{% url 'about:company' %}">About <span class="sr-only"></span></a>
+                                    <a class="nav-link" href="{% url 'about:company' %}">About <span class="sr-only"></span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'products:intro' %}">Products <span class="sr-only"></span></a>
@@ -195,13 +195,13 @@ Unleash the traveler inside you!
 								<div class="col-sm-6">
 									<div class="about-sty ml-sm-3">
 										<span class="fa fa-line-chart text-wh"></span>
-										<p class="text-li mt-2">Tremendous Business Growth</p>
+										<p class="text-li mt-2">Tremendous Growth</p>
 									</div>
 								</div>
 								<div class="col-sm-6 mt-sm-0 mt-4">
 									<div class="about-sty-2 px-4 py-5">
 										<span class="fa fa-users text-wh"></span>
-										<p class="text-li mt-2">Prioritize Customers' Satisfaction</p>
+										<p class="text-li mt-2">Customers' Satisfaction Prioritized</p>
 									</div>
 									<div class="about-sty-2 px-4 py-5 mt-4">
 										<span class="fa fa-comments text-wh"></span>
@@ -287,44 +287,44 @@ Unleash the traveler inside you!
 			<!-- Team Member 1 -->
 			<div class="col-xl-3 col-md-6 mb-4">
 			  <div class="card border-0 shadow">
-				<img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+				<img src="{% static 'img/minkyu.jpg' %}" class="card-img-top" alt="...">
 				<div class="card-body text-center">
-				  <h5 class="card-title mb-0">Team Member</h5>
+				  <h5 class="card-title mb-0">Minkyu Jheun</h5>
 				  <div class="card-text text-black-50">Chief Executive Officer</div>
-				  <div class="card-text text-black-50">E-mailaddress@gmail.com</div>
+				  <div class="card-text text-black-50">jhmk612@gmail.com</div>
 				</div>
 			  </div>
 			</div>
 			<!-- Team Member 2 -->
 			<div class="col-xl-3 col-md-6 mb-4">
 			  <div class="card border-0 shadow">
-				<img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+				<img src="{% static 'img/jaemin.jpg' %}" class="card-img-top" alt="...">
 				<div class="card-body text-center">
-				  <h5 class="card-title mb-0">Team Member</h5>
+				  <h5 class="card-title mb-0">Jaemin park</h5>
 				  <div class="card-text text-black-50">Chief Technology Officer</div>
-				  <div class="card-text text-black-50">E-mailaddress@gmail.com</div>
+				  <div class="card-text text-black-50">jminpark97@gmail.com</div>
 				</div>
 			  </div>
 			</div>
 			<!-- Team Member 3 -->
 			<div class="col-xl-3 col-md-6 mb-4">
 			  <div class="card border-0 shadow">
-				<img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+				<img src="{% static 'img/sehyun.jpg' %}" class="card-img-top" alt="...">
 				<div class="card-body text-center">
-				  <h5 class="card-title mb-0">Haechan Lee</h5>
-				  <div class="card-text text-black-50">Web Developer</div>
-				  <div class="card-text text-black-50">daniel2461@gmail.com</div>
+				  <h5 class="card-title mb-0">Sehyun Kim</h5>
+				  <div class="card-text text-black-50">Art Director</div>
+				  <div class="card-text text-black-50">archaicshk@gmail.com</div>
 				</div>
 			  </div>
 			</div>
 			<!-- Team Member 4 -->
 			<div class="col-xl-3 col-md-6 mb-4">
 			  <div class="card border-0 shadow">
-				<img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
+				<img src="{% static 'img/haechan.jpg' %}" class="card-img-top" alt="...">
 				<div class="card-body text-center">
-				  <h5 class="card-title mb-0">Sehyun Kim</h5>
-				  <div class="card-text text-black-50">Art Director</div>
-				  <div class="card-text text-black-50">E-mailaddress@gmail.com</div>
+				  <h5 class="card-title mb-0">Haechan Lee</h5>
+				  <div class="card-text text-black-50">Web Developer</div>
+				  <div class="card-text text-black-50">daniel2461@gmail.com</div>
 				</div>
 			  </div>
 			</div>
@@ -338,8 +338,8 @@ Unleash the traveler inside you!
 				<div class="container py-xl-5 my-lg-5">
 					<div class="cont-w3pvt py-sm-5 py-4">
 						<span class="w3-line text-uppercase">Technology&Method</span>
-						<h3 class="w3pvt-web-title mt-2 mb-3">Through Augmented Reality(AR) & Virtual Reality(VR) Technology, we present Time Travel.</h3>
-						<p class="text-botm">Augmented reality (AR) is an interactive experience of a real-world environment where the objects in the real-world are modified through computer-generated perceptual information, sometimes across multiple sensory modalities, including visual, auditory, etc. Through AR & VR Technology, the overlaid sensory information can be constructive (additive to the natural environment), or destructive (masking of the natural environment).</p>
+						<h3 class="w3pvt-web-title mt-2 mb-3">Through Augmented Reality & Virtual Reality Technology, Tempus presents Time Travel.</h3>
+						<p class="text-botm">Augmented reality(AR) is an interactive experience of a real-world environment where the objects in the real-world are modified through computer-generated perceptual information, sometimes across multiple sensory modalities, including visual, auditory, etc. Through AR & VR Technology, the overlaid sensory information can be constructive (additive to the natural environment), or destructive (masking of the natural environment).</p>
 					    <a href="https://www.researchgate.net/profile/Rick_Van_Krevelen2/publication/292150312_Augmented_Reality_Technologies_Applications_and_Limitations/links/56ab2b4108aed5a01359c113/Augmented-Reality-Technologies-Applications-and-Limitations.pdf" class="btn btn-link" role="button">>>>More Info<<<</a>
 					</div>
 				</div>
