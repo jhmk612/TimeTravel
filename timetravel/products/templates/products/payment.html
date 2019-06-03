@@ -549,97 +549,38 @@ http://www.templatemo.com/tm-511-journey
       <!-- /.container -->
 
 
-      <!-- CREDIT CARD FORM STARTS HERE -->
-    <div class="container-fluid">
-<div class="container">
-<div class="row">
-<!-- You can make it whatever width you want. I'm making it full width
-on <= small devices and 4/12 page width on >= medium devices -->
-<div class="col-xs-12 col-md-4">
-      <div class="panel panel-default credit-card-box">
-        <div class="panel-heading display-table" >
-          <div class="row display-tr" >
-            <h3 class="panel-title display-td" >Payment Details</h3>
-            <div class="display-td" >                            
-              <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
-            </div>
-          </div>                    
-        </div>
-        <div class="panel-body">
-          <form role="form" id="payment-form">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="form-group">
-                  <label for="cardNumber">CARD NUMBER</label>
-                  <div class="input-group">
-                    <input 
-                    type="tel"
-                    class="form-control"
-                    name="cardNumber"
-                    placeholder="Valid Card Number"
-                    autocomplete="cc-number"
-                    required autofocus 
-                    />
-                    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
-                  </div>
-                </div>                            
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-7 col-md-7">
-                <div class="form-group">
-                  <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
-                  <input 
-                  type="tel" 
-                  class="form-control" 
-                  name="cardExpiry"
-                  placeholder="MM / YY"
-                  autocomplete="cc-exp"
-                  required 
-                  />
-                </div>
-              </div>
-              <div class="col-xs-5 col-md-5 pull-right">
-                <div class="form-group">
-                  <label for="cardCVC">CVC CODE</label>
-                  <input 
-                  type="tel" 
-                  class="form-control"
-                  name="cardCVC"
-                  placeholder="CVC"
-                  autocomplete="cc-csc"
-                  required
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="form-group">
-                  <label for="couponCode">COUPON CODE</label>
-                  <input type="text" class="form-control" name="couponCode" />
-                </div>
-              </div>                        
-            </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <button class="btn btn-success btn-lg btn-block" type="submit">Make Payment</button>
-              </div>
-            </div>
-            <div class="row" style="display:none;">
-              <div class="col-xs-12">
-                <p class="payment-errors"></p>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>            
-</div>
-</div>
-</div>
-</div>
-      <!-- CREDIT CARD FORM ENDS HERE -->
+     
 
+ <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
+
+  <!-- Specify a Buy Now button. -->
+  <input type="hidden" name="cmd" value="_xclick">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Premium Umbrella">
+  <input type="hidden" name="amount" value="50.00">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Provide a drop-down menu option field. -->
+  <input type="hidden" name="on0" value="Type">Type of umbrella <br />
+  <select name="os0">
+    <option value="Select Type">-- Select Type --</option>
+    <option value="Standard">Standard</option>
+    <option value="Collapsable">Collapsable</option>
+  </select> <br />
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit" border="0"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+    alt="Buy Now">
+
+  <img alt="" border="0" width="1" height="1"
+  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+</form>
 
 
 
