@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TimeTravel</title>
+    <title>TEMPUS</title>
 <!-- 
 Journey Template 
 http://www.templatemo.com/tm-511-journey
@@ -83,7 +83,7 @@ http://www.templatemo.com/tm-511-journey
 
 
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'accounts:logout' %}" >로그아웃</a><span class="sr-only"></span></li>
+                    <li class="nav-item"><a class="nav-link external" href="{% url 'accounts:logout' %}" >로그아웃</a><span class="sr-only"></span></li>
 
                     {% else %}
 
@@ -342,6 +342,7 @@ http://www.templatemo.com/tm-511-journey
             });
  // Update nav links on scroll
  $('#tm-top-bar').singlePageNav({
+                filter: ':not(.external)',
                 currentClass:'active',
                 offset: 60
             });
