@@ -205,6 +205,7 @@ http://www.templatemo.com/tm-511-journey
                                                     <h6>Join the History of Korea's Independence!</h6>
                                                     <p></p>
                                                     <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Price : $500</a>
+                                                    <a href="javascript:void(0)" class="review1 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See Customer Reviews</a>
                                                 </div>
                                             </section>
                                             <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
@@ -228,6 +229,7 @@ http://www.templatemo.com/tm-511-journey
                                                     <h6>Join the History of Korea's Contemporary History!</h6>
                                                     <p></p>
                                                     <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Price : $300</a>
+                                                    <a href="javascript:void(0)" class="review2 text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">See Customer Reviews</a>
                                                 </div>                        
 
                                             </section>
@@ -251,6 +253,7 @@ http://www.templatemo.com/tm-511-journey
                                                     <h6>Never met the Korean King before? Perhaps this is your last chance! Meet the King Gojong, while you take a walk for Deoksoogung Palace.</h6>
                                                     <p></p>
                                                     <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Price : $250</a>
+                                                    <a href="javascript:void(0)" class="review3 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See Customer Reviews</a>
                                                 </div>
                                             </section>
                                         </div>
@@ -258,7 +261,7 @@ http://www.templatemo.com/tm-511-journey
                                                                         <div class="container">
                                                                             <div class="row">
                                                                                 <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
-                                                                                    <h2 class="text-uppercase mb-4"><strong>Here are our Travelers' Records</strong></h2>   
+                                                                                    <h2 class="text-uppercase mb-4" id="reviews"><strong>Here are our Travelers' Records</strong></h2>
                                                                                 </div>
                                                                             </div>
                                                                         </div> 
@@ -267,19 +270,19 @@ http://www.templatemo.com/tm-511-journey
             <div class="tm-container-outer" id="tm-section-3">
                 <ul class="nav nav-pills tm-tabs-links">
                                         <li class="tm-tab-link-li">
-                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                        <a href="#1aa" data-toggle="tab" class="tm-tab-link" id="1a">
                             <h2 class="text-uppercase mb-4"><strong>Exciting</strong></h2>
                             <h2 class="text-uppercase mb-4"><strong>Course</strong></h2>
                         </a>
                     </li>
                     <li class="tm-tab-link-li">
-                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                        <a href="#2aa" data-toggle="tab" class="tm-tab-link" id="2a">
                             <h2 class="text-uppercase mb-4"><strong>Amusing</strong></h2>
                             <h2 class="text-uppercase mb-4"><strong>Course</strong></h2>
                         </a>
                     </li>
                                         <li class="tm-tab-link-li">
-                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                        <a href="#3aa" data-toggle="tab" class="tm-tab-link" id="3a">
                             <h2 class="text-uppercase mb-4"><strong>Relaxing</strong></h2>
                             <h2 class="text-uppercase mb-4"><strong>Course</strong></h2>
                         </a>
@@ -288,7 +291,7 @@ http://www.templatemo.com/tm-511-journey
                 </ul>
                 <div class="tab-content clearfix">
                     <!-- Tab 1 -->
-                    <div class="tab-pane fade" id="1a">
+                    <div class="tab-pane fade" id="1aa">
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
                                 <img src="{% static 'img/person8.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
@@ -342,7 +345,7 @@ http://www.templatemo.com/tm-511-journey
                     </div> <!-- tab-pane -->
                     
                     <!-- Tab 2 -->
-                    <div class="tab-pane fade" id="2a">
+                    <div class="tab-pane fade" id="2aa">
 
                         <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
@@ -397,7 +400,7 @@ http://www.templatemo.com/tm-511-journey
                     </div> <!-- tab-pane -->          
                     
                     <!-- Tab 3 -->     
-                    <div class="tab-pane fade show active" id="3a">
+                    <div class="tab-pane fade show active" id="3aa">
 
                          <div class="tm-recommended-place-wrap">
                             <div class="tm-recommended-place">
@@ -595,9 +598,19 @@ http://www.templatemo.com/tm-511-journey
                 }
             });
 
-            // Smooth scroll to search form
-            $('.tm-down-arrow-link').click(function(){
-                $.scrollTo('#tm-section-search', 400, {easing:'linear'});
+            // Smooth scroll to reviews
+
+            $('.review1').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                $('[href="#1aa"]').tab('show');
+            });
+            $('.review2').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                $('[href="#2aa"]').tab('show');
+            });
+            $('.review3').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                $('[href="#3aa"]').tab('show');
             });
 
             // Slick Carousel

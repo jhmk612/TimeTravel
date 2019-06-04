@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="175d5240-5ef7-4f6c-a0cb-adb3bb53110b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/templates/index/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/index_jamsil.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/index_jamsil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/hot_cold.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/hot_cold.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index/templates/index/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="303" column="127" selection-start-line="303" selection-start-column="127" selection-end-line="303" selection-end-column="127" />
+            <state relative-caret-position="24">
+              <caret line="332" lean-forward="true" selection-start-line="332" selection-end-line="332" />
               <folding>
                 <element signature="e#6560#6566#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,8 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="551" column="58" selection-start-line="551" selection-start-column="58" selection-end-line="551" selection-end-column="58" />
+            <state relative-caret-position="5269">
+              <caret line="608" column="28" selection-start-line="608" selection-start-column="28" selection-end-line="608" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/products/templates/products/index_jamsil.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="155" column="63" selection-start-line="155" selection-start-column="63" selection-end-line="155" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -103,15 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
               <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/products/templates/products/index_yeouido.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -204,12 +206,12 @@
         <option value="$PROJECT_DIR$/products/views.py" />
         <option value="$PROJECT_DIR$/products/urls.py" />
         <option value="$PROJECT_DIR$/products/templates/products/index.html" />
-        <option value="$PROJECT_DIR$/products/templates/products/index_jamsil.html" />
         <option value="$PROJECT_DIR$/products/templates/products/index_yeouido.html" />
-        <option value="$PROJECT_DIR$/products/templates/products/payment.html" />
         <option value="$PROJECT_DIR$/about/templates/index.html" />
         <option value="$PROJECT_DIR$/products/templates/products/products_intro.html" />
         <option value="$PROJECT_DIR$/index/templates/index/home.html" />
+        <option value="$PROJECT_DIR$/products/templates/products/payment.html" />
+        <option value="$PROJECT_DIR$/products/templates/products/index_jamsil.html" />
       </list>
     </option>
   </component>
@@ -406,12 +408,12 @@
       <workItem from="1558680758439" duration="1622000" />
       <workItem from="1558776247471" duration="15237000" />
       <workItem from="1558854683519" duration="252000" />
-      <workItem from="1558879186983" duration="35283000" />
+      <workItem from="1558879186983" duration="36838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106918000" />
+    <option name="totallyTimeSpent" value="108473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -709,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/index_jamsil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/products/templates/products/index_yeouido.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -754,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="551" column="58" selection-start-line="551" selection-start-column="58" selection-end-line="551" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -793,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index/templates/index/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="303" column="127" selection-start-line="303" selection-start-column="127" selection-end-line="303" selection-end-column="127" />
+        <state relative-caret-position="24">
+          <caret line="332" lean-forward="true" selection-start-line="332" selection-end-line="332" />
           <folding>
             <element signature="e#6560#6566#1#HTML" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -802,6 +790,20 @@
             <element signature="n#style#0;n#section#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#6;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5269">
+          <caret line="608" column="28" selection-start-line="608" selection-start-column="28" selection-end-line="608" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/templates/products/index_jamsil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="155" column="63" selection-start-line="155" selection-start-column="63" selection-end-line="155" selection-end-column="63" />
         </state>
       </provider>
     </entry>
