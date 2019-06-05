@@ -104,11 +104,8 @@ http://www.templatemo.com/tm-511-journey
 
 
 	<!-- main -->
-	<div class="d-flex">
-		<!-- left content -->
-		<div id="main-content">
-		<!--navbar삽입-->
-		<div class="tm-top-bar-bg"></div>    
+	 <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
             <div class="tm-top-bar" id="tm-top-bar">
                 <div class="container">
                     <div class="row">
@@ -124,19 +121,19 @@ http://www.templatemo.com/tm-511-journey
                                 <ul class="navbar-nav ml-auto">
 
                                   <li class="nav-item">
-                                    <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#top">Home <span class="sr-only"></span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'about:company' %}">About <span class="sr-only"></span></a>
+                                    <a class="nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'products:intro' %}">Products <span class="sr-only"></span></a>
+                                    <a class="nav-link" href="#products">Products <span class="sr-only"></span></a>
                                 </li>
                                 {% if not user.is_anonymous %}
 
 
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'accounts:logout' %}" >로그아웃</a><span class="sr-only"></span></li>
+                    <li class="nav-item"><a class="nav-link external" href="{% url 'accounts:logout' %}" >로그아웃</a><span class="sr-only"></span></li>
 
                     {% else %}
 
@@ -156,10 +153,10 @@ http://www.templatemo.com/tm-511-journey
                             </ul>
                         </div>
                     </nav>
-                </div> 
-            </div> 
-        </div> <!--//navbar삽입> <!-- .tm-top-bar -->
-		
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
 			<!-- home -->
 			<div id="home">
 				<!-- banner -->
@@ -441,10 +438,7 @@ Unleash the traveler inside you!
                 $.scrollTo('#signup', 300, {easing:'linear'});
             });
  // Update nav links on scroll
- $('#tm-top-bar').singlePageNav({
-                currentClass:'active',
-                offset: 60
-            });
+
 
             // Close navbar after clicked
             $('.nav-link').click(function(){
