@@ -47,6 +47,7 @@ http://www.templatemo.com/tm-511-journey
                 width: 53%;
                 z-index: 100;
                 margin-left: -42px;
+
             }
             #trial {
               width: 300px;
@@ -58,6 +59,14 @@ http://www.templatemo.com/tm-511-journey
         .paypal {
   font-size: 30px;
 }
+
+
+           
+.paypal {
+  font-size: 20px;
+}
+
+
 
 
       </style>
@@ -521,8 +530,13 @@ http://www.templatemo.com/tm-511-journey
 
 </div>
 <!-- /.container -->
+
 <div class="paypal" style='margin:auto;' id="trial">
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+<div class=paypal style='margin:auto;'>
+  <form action="https://www.paypal.com/cgi-bin/webscr" align="center" method="post" target="_top">
+
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="jminpark97@gmail.com">
 <input type="hidden" name="lc" value="KR">
@@ -541,7 +555,11 @@ http://www.templatemo.com/tm-511-journey
     <option value="5">5 $2,500.00 USD</option>
 </select> </td></tr>
 
+
 <tr><td><input type="hidden" name="on0" value="Name of the accomodation">name of the accomodation</td></tr><tr><td><select name="os1">
+
+<tr><td><input type="hidden" name="on1" value="Name of the accomodation">name of the accomodation</td></tr><tr><td><select name="os0">
+
     <option value="a">a $50.00 USD</option>
     <option value="b">b $1,00.00 USD</option>
     <option value="c">c $1,50.00 USD</option>
@@ -550,7 +568,11 @@ http://www.templatemo.com/tm-511-journey
 </select> </td></tr>
 
 
+
 <tr><td><input type="hidden" name="on1" value="Other Words to say">Other words to say</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+
+<tr><td><input type="hidden" name="on2" value="Other Words to say">Other words to say</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+
 </table>
 <input type="hidden" name="currency_code" value="USD">
 <input type="hidden" name="option_select0" value="1">
