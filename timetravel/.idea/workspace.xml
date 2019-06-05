@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="175d5240-5ef7-4f6c-a0cb-adb3bb53110b" name="Default Changelist" comment="" />
+    <list default="true" id="175d5240-5ef7-4f6c-a0cb-adb3bb53110b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +43,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="587" column="58" lean-forward="true" selection-start-line="587" selection-start-column="58" selection-end-line="587" selection-end-column="58" />
+            <state relative-caret-position="411">
+              <caret line="575" column="58" selection-start-line="575" selection-start-column="58" selection-end-line="575" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#div#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -427,7 +428,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112332000" />
+    <option name="totallyTimeSpent" value="112897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -812,11 +813,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="587" column="58" lean-forward="true" selection-start-line="587" selection-start-column="58" selection-end-line="587" selection-end-column="58" />
+        <state relative-caret-position="411">
+          <caret line="575" column="58" selection-start-line="575" selection-start-column="58" selection-end-line="575" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#div#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
