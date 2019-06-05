@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TimeTravel</title>
+    <title>TEMPUS</title>
 <!-- 
 Journey Template 
 http://www.templatemo.com/tm-511-journey
@@ -83,7 +83,7 @@ http://www.templatemo.com/tm-511-journey
 
 
 
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'accounts:logout' %}" >로그아웃</a><span class="sr-only"></span></li>
+                    <li class="nav-item"><a class="nav-link external" href="{% url 'accounts:logout' %}" >로그아웃</a><span class="sr-only"></span></li>
 
                     {% else %}
 
@@ -252,45 +252,45 @@ http://www.templatemo.com/tm-511-journey
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
                         <h2 class="">Your favorite places, ANYTIME</h2>
-                        <p>Aenean in lacus nec dolor fermentum congue. Maecenas ut velit pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi nibh, faucibus ac eros id, sagittis tincidunt velit. Proin interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar id, sagittis eget diam.</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                        <p>No more 'Latte is horse...'! Just see it for REAL!</p>
+                        <a href="javascript:void(0)" class="tm-1 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Are there more?</a>
                     </div>
                 </section>
                 <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
 
                     <div class="tm-right tm-slideshow tm-slideshow-highlight">
-                        <img src="img/tm-img-02.jpg" alt="Image">
-                        <img src="img/tm-img-03.jpg" alt="Image">
-                        <img src="img/tm-img-01.jpg" alt="Image">
+                        <img src='{% static 'img/hot_cold.png' %}' alt="Image">
+
                     </div>
 
                     <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
-                        <h2 class="">Asia's most popular places</h2>
-                        <p>Vivamus in massa ullamcorper nunc auctor accumsan ac at arcu. Donec sagittis mattis pharetra. Proin commodo, ante et volutpat pulvinar, arcu arcu ullamcorper diam, id maximus sem tellus id sem. Suspendisse eget rhoncus diam. Fusce urna elit, porta nec ullamcorper id.</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                        <h2 class="">Personalized Tour Packages</h2>
+                        <p>If you are a religious saint, go on and meet the Pope. Soccer fan? We reinvite you to a 2002 World Cup miracle. Peaceful Joseon Dynasty? You have it. Tour packages in consideration of people's preferences are ready-made. Enjoy!</p>
+                        <a href="javascript:void(0)" class="tm-2 text-uppercase tm-btn tm-btn-white tm-btn-white-highlight" id="tm-2">Are there more?</a>
                     </div>
 
                 </section>
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
-                        <img src="img/tm-img-03.jpg" alt="Image">
-                        <img src="img/tm-img-02.jpg" alt="Image">
-                        <img src="img/tm-img-01.jpg" alt="Image">
+                        <img src='{% static 'img/airbnb.png' %}' alt="Image">
+
                     </div>
                     <div class="tm-slideshow-description tm-bg-primary">
-                        <h2 class="">America's most famous places</h2>
-                        <p>Donec nec laoreet diam, at vehicula ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec dapibus nunc, quis viverra metus. Morbi eget diam gravida, euismod magna vel, tempor urna.</p>
-                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                        <h2 class="">Payment Ready in Partnership with Airbnb</h2>
+                        <p>How awful would it be to book a tour package and then look for a place to stay? No worries, TEMPUS provides you a variety of choices for your stay with Airbnb. Choose your option to amplify your experience!</p>
+                        <a href="javascript:void(0)" class="tm-3 text-uppercase tm-btn tm-btn-white tm-btn-white-primary" id="tm-3">Want to browse the products?</a>
                     </div>
                 </section>
             </div>
+
+
               <section class="p-5 tm-container-outer tm-bg-gray" style="background-color: white">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
                             <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
-                            <p class="mb-4">Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi metus quis lectus. Duis nec lobortis velit. Vivamus id magna vulputate, tempor ante eget, tempus augue. Maecenas ultricies neque magna.</p>
-                            <a href="{% url 'products:intro' %}" class="text-uppercase btn-primary tm-btn">Continue explore</a>
+                            <p class="mb-4"></p>
+                            <a href="{% url 'products:intro' %}" class="text-uppercase btn-primary tm-btn" id="products_browse">Continue explore</a>
                         </div>
                     </div>
                 </div>
@@ -300,9 +300,10 @@ http://www.templatemo.com/tm-511-journey
         </div><!-- .tm-container-outer -->
 
             <footer class="tm-container-outer">
-                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company 
+                <p class="mb-0">Copyright © <span class="tm-current-year">2019</span>TEMPUS
                     
-                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
+                . Developed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">JADE</a></p>
+                <p>. Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Team "Hairy Bunch"</a></p>
             </footer>
 
       </div>
@@ -340,8 +341,20 @@ http://www.templatemo.com/tm-511-journey
             $('.tm-signup-link').click(function(){
                 $.scrollTo('#signup', 300, {easing:'linear'});
             });
+
+
+            $('.tm-1').click(function(){
+                $.scrollTo('#tm-2', 300, {easing:'linear'});
+            });
+            $('.tm-2').click(function(){
+                $.scrollTo('#tm-3', 300, {easing:'linear'});
+            });
+            $('.tm-3').click(function(){
+                $.scrollTo('#products_browse', 300, {easing:'linear'});
+            });
  // Update nav links on scroll
  $('#tm-top-bar').singlePageNav({
+                filter: ':not(.external)',
                 currentClass:'active',
                 offset: 60
             });
