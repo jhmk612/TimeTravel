@@ -78,13 +78,13 @@ http://www.templatemo.com/tm-511-journey
                             <ul class="navbar-nav ml-auto">
 
                               <li class="nav-item">
-                                <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'about:company' %}">About <span class="sr-only"></span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'products:intro' %}">Products <span class="sr-only"></span></a>
+                                <a class="nav-link active" href="{% url 'products:intro' %}">Products <span class="sr-only"></span></a>
                             </li>
                             {% if not user.is_anonymous %}
 
@@ -194,6 +194,7 @@ http://www.templatemo.com/tm-511-journey
             <h6>Join the History of Korea's Independence!</h6>
             <p></p>
             <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Price : $500</a>
+            <a href="javascript:void(0)" class="review1 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See Reviews</a>
         </div>
     </section>
     <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
@@ -217,6 +218,7 @@ http://www.templatemo.com/tm-511-journey
         <h6>Join the History of Korea's Contemporary History!</h6>
         <p></p>
         <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Price : $500</a>
+           <a href="javascript:void(0)" class="review2 text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">See Reviews</a>
     </div>                        
 
 </section>
@@ -240,10 +242,11 @@ http://www.templatemo.com/tm-511-journey
     <h6>Never met the Korean King before? Perhaps this is your last chance! Meet the King Gojong, while you take a walk for Deoksoogung Palace.</h6>
     <p></p>
     <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Price : $500</a>
+       <a href="javascript:void(0)" class="review3 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See Reviews</a>
 </div>
 </section>
 </div>
-<section class="p-5 tm-container-outer tm-bg-gray">
+<section class="p-5 tm-container-outer tm-bg-gray" id="reviews">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
@@ -599,9 +602,20 @@ http://www.templatemo.com/tm-511-journey
                }
            });
 
-            // Smooth scroll to search form
-            $('.tm-down-arrow-link').click(function(){
-                $.scrollTo('#tm-section-search', 400, {easing:'linear'});
+            // Smooth scroll to customer reviews
+            $('.review1').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                 $('[href="#1a"]').tab('show');
+            });
+
+            $('.review2').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                 $('[href="#2a"]').tab('show');
+            });
+
+            $('.review3').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                 $('[href="#3a"]').tab('show');
             });
 
             // Slick Carousel

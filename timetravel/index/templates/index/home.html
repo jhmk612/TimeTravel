@@ -89,10 +89,10 @@ http://www.templatemo.com/tm-511-journey
 
 
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{% url 'accounts:signup' %}">회원가입</a><span class="sr-only"></span>
+                        <a class="nav-link external" href="{% url 'accounts:signup' %}">회원가입</a><span class="sr-only"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{% url 'accounts:login' %}" >로그인</a><span class="sr-only"></span>
+                        <a class="nav-link external" href="{% url 'accounts:login' %}" >로그인</a><span class="sr-only"></span>
                     </li>
 
                {% endif %}
@@ -177,23 +177,7 @@ http://www.templatemo.com/tm-511-journey
                                     </div><!--tmbanner-->
                             </div><!--col-->
                         </div><!--row-->
-                            <!-- <div class="row tm-banner-row" id="tm-section-search">
 
-                                   <form action="" method="post" class="tm-search-form tm-section-pad-2">
-                                       {% csrf_token %}
-                                <div class="form-row tm-search-form-row">
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
-                                        <label for="inputCity">Choose Your Destination</label>
-                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
-                                    </div>
-
-                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
-                                        <label for="btnSubmit">&nbsp;</label>
-                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
-                                    </div>
-                                </div> <!--form row-->
-                            <!--</form>
-                             </div><!--banner row-->
                                 <div class="tm-banner-overlay"></div>
                             </div><!--container-->
                     </div><!--container outer-->
@@ -352,8 +336,9 @@ http://www.templatemo.com/tm-511-journey
             $('.tm-3').click(function(){
                 $.scrollTo('#products_browse', 300, {easing:'linear'});
             });
- // Update nav links on scroll
- $('#tm-top-bar').singlePageNav({
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
                 filter: ':not(.external)',
                 currentClass:'active',
                 offset: 60
