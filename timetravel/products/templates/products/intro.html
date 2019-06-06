@@ -110,7 +110,7 @@ http://www.templatemo.com/tm-511-journey
                         <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
                             <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
                             <p class="mb-4">We aim to give every customer the best time travel experience. We currently provide 3 venues for your travel. Please take a look and choose the place you want to visit the most! If you have already expereienced our time travel service, why not try anohter course this time?</p>
-                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>                              
+                            <a href="javascript:void(0)" class="next text-uppercase btn-primary tm-btn">Continue explore</a>
                         </div>
                     </div>
                 </div>            
@@ -160,6 +160,14 @@ http://www.templatemo.com/tm-511-journey
                         <a href="{% url 'products:yeouido' %}" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
                     </div>
                 </section>
+            
+
+                 <footer class="tm-container-outer">
+        <p class="mb-0">Copyright © <span class="tm-current-year">2019</span>TEMPUS
+
+            . Developed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">JADE</a></p>
+            <p>. Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Team "Hairy Bunch"</a></p>
+        </footer>
             </div>
             </div>
 
@@ -192,8 +200,8 @@ http://www.templatemo.com/tm-511-journey
             });
 
             // Smooth scroll to search form
-            $('.tm-down-arrow-link').click(function(){
-                $.scrollTo('#tm-section-search', 400, {easing:'linear'});
+            $('.next').click(function(){
+                $.scrollTo('#tm-section-2', 300, {easing:'linear'});
             });
 
 
