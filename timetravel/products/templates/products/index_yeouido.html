@@ -181,6 +181,7 @@ http://www.templatemo.com/tm-511-journey
 													<h6>Join one of the most meaningful events that have passed our lives.</h6>
 													<p></p>
 													<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Price : $500</a>
+                                                    <a href="javascript:void(0)" class="review1 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See Reviews</a>
 												</div>
 											</section>
 											<section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
@@ -201,6 +202,7 @@ http://www.templatemo.com/tm-511-journey
 													<h6>Be a part of this dramatic event and lend your emotional support.</h6>
 													<p></p>
 													<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Price : $300</a>
+                                                    <a href="javascript:void(0)" class="review2 text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">See Reviews</a>
 												</div>                        
 
 											</section>
@@ -220,10 +222,11 @@ http://www.templatemo.com/tm-511-journey
 													<h6>You might even see your parents meeting each other here. Search for familiar faces and the retro fashion for real!</h6>
 													<p></p>
 													<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Price : $250</a>
+                                                    <a href="javascript:void(0)" class="review3 text-uppercase tm-btn tm-btn-white tm-btn-white-primary">See Reviews</a>
 												</div>
 											</section>
 										</div>
-																	<section class="p-5 tm-container-outer tm-bg-gray">
+																	<section class="p-5 tm-container-outer tm-bg-gray" id="reviews">
 																		<div class="container">
 																			<div class="row">
 																				<div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
@@ -537,10 +540,21 @@ http://www.templatemo.com/tm-511-journey
             });
 
             // Smooth scroll to search form
-            $('.tm-down-arrow-link').click(function(){
-                $.scrollTo('#tm-section-search', 400, {easing:'linear'});
+
+             $('.review1').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                 $('[href="#1a"]').tab('show');
             });
 
+            $('.review2').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                 $('[href="#2a"]').tab('show');
+            });
+
+            $('.review3').click(function(){
+                $.scrollTo('#reviews', 300, {easing:'linear'});
+                 $('[href="#3a"]').tab('show');
+            });
 
 
 
