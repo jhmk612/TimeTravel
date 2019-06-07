@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="175d5240-5ef7-4f6c-a0cb-adb3bb53110b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/index/templates/index/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/airbnb.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/airbnb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/payment.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +20,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index/templates/index/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="493">
               <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3825">
-              <caret line="255" column="14" lean-forward="true" selection-start-line="255" selection-start-column="14" selection-end-line="255" selection-end-column="14" />
+            <state relative-caret-position="3780">
+              <caret line="252" column="14" lean-forward="true" selection-start-line="252" selection-start-column="14" selection-end-line="252" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -413,12 +414,12 @@
       <workItem from="1558776247471" duration="15237000" />
       <workItem from="1558854683519" duration="252000" />
       <workItem from="1558879186983" duration="38831000" />
-      <workItem from="1559794165699" duration="4875000" />
+      <workItem from="1559794165699" duration="4919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121053000" />
+    <option name="totallyTimeSpent" value="121097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -766,8 +767,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/products/templates/products/payment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="255" column="14" lean-forward="true" selection-start-line="255" selection-start-column="14" selection-end-line="255" selection-end-column="14" />
+        <state relative-caret-position="3780">
+          <caret line="252" column="14" lean-forward="true" selection-start-line="252" selection-start-column="14" selection-end-line="252" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -787,7 +788,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index/templates/index/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="493">
           <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
