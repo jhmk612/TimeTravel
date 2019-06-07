@@ -521,6 +521,13 @@ http://www.templatemo.com/tm-511-journey
 <!-- /.container -->
 
     <section class="p-5 tm-container-outer tm-bg-gray" style="background-color: lightgrey">
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <div class="paypal" style='margin:auto;' align="center" id="trial" style="text-align:center">
  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_xclick">
@@ -628,7 +635,9 @@ http://www.templatemo.com/tm-511-journey
             $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
         });
 
-
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 
     </script>
 
