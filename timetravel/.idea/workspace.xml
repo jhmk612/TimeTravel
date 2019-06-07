@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="175d5240-5ef7-4f6c-a0cb-adb3bb53110b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/templates/index/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/index/templates/index/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,22 +38,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="129" column="84" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="84" />
+            <state relative-caret-position="180">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/signup.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="565">
               <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/about/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -93,15 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
               <caret line="64" column="83" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/products/templates/products/index_jamsil.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="230" column="95" selection-start-line="230" selection-start-column="95" selection-end-line="230" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -192,7 +185,6 @@
         <option value="$PROJECT_DIR$/products/urls.py" />
         <option value="$PROJECT_DIR$/products/templates/products/index.html" />
         <option value="$PROJECT_DIR$/products/views.py" />
-        <option value="$PROJECT_DIR$/about/templates/index.html" />
         <option value="$PROJECT_DIR$/products/templates/products/payment.html" />
         <option value="$PROJECT_DIR$/products/templates/products/intro.html" />
         <option value="$PROJECT_DIR$/products/templates/products/products_intro.html" />
@@ -201,6 +193,7 @@
         <option value="$PROJECT_DIR$/index/templates/index/home.html" />
         <option value="$PROJECT_DIR$/accounts/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/signup.html" />
+        <option value="$PROJECT_DIR$/about/templates/index.html" />
       </list>
     </option>
   </component>
@@ -415,12 +408,12 @@
       <workItem from="1558776247471" duration="15237000" />
       <workItem from="1558854683519" duration="252000" />
       <workItem from="1558879186983" duration="38831000" />
-      <workItem from="1559794165699" duration="6446000" />
+      <workItem from="1559794165699" duration="6498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122624000" />
+    <option name="totallyTimeSpent" value="122676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -453,9 +446,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tour/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Dropbox/MIS/timetravel/index/templates/index/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -780,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="129" column="84" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -798,6 +781,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
           <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
